@@ -10,33 +10,35 @@
  -->
  <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js' %>
 
-<div class="container">
-  <div class="jumbotron subhead" id="overview">
+<header>
+  <div class="container">
+    <div class="jumbotron subhead" id="overview">
 
-    <div class="row">
-      <div class="col-sm-12 text-center">
-        <h1>Суги Бан</h1>
+      <div class="row">
+        <div class="col-sm-12 text-center" id="logo">
+          <h1>Суги Бан</h1>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-sm-12 text-center">
-        <h3>Экологически чистые материалы.<br>
-        С нами вы сделаете свое жилище оссобенным.</h3>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h3>Экологически чистые материалы.<br>
+          С нами вы сделаете свое жилище оссобенным.</h3>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 text-right">
-        <h4>Телефон: 8999999999</h4>
+      <div class="row">
+        <div class="col-sm-12 text-right">
+          <h4>Телефон: 8999999999</h4>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 text-right">
-        <h4>Почта: бла бла</h4>
+      <div class="row">
+        <div class="col-sm-12 text-right">
+          <h4>Почта: бла бла</h4>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</header>
 
 <div class="navbar-wrapper">
       <div class="container">
@@ -54,13 +56,9 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">ХЗ</a></li>
-                <li><%= link_to "Котакты", main_contact_path%>
 
-                  <!--<a href="#contact">Contact</a>--></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ХЗ <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Каталог <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
@@ -71,6 +69,9 @@
                     <li><a href="#">One more separated link</a></li>
                   </ul>
                 </li>
+
+                <li><%= link_to "Котакты", main_contact_path%></li>
+                <li><a href="#about">Фото галерея</a></li>
               </ul>
             </div>
           </div>
@@ -81,12 +82,15 @@
 
 <div class="container">
 
-  <div class="fotorama">
+  <div class="fotorama" data-nav="thumbs"
+                        data-navposition="top"
+                        data-transition="crossfade">
+
     <%=image_tag("test.jpg" ) %>
     <%=image_tag("test2.jpg" ) %>
     <%=image_tag("test3.jpg" ) %>
     <%=image_tag("test4.jpg" ) %>
-
+    <%=image_tag("test5.jpg" ) %>
 
   </div>
 </div>
