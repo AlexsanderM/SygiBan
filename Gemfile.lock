@@ -157,7 +157,7 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)
-  fotoramajs
+  fotoramajs (>= 4.6.4)
   jbuilder (~> 2.0)
   jquery-rails
   mini_portile2
