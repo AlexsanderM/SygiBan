@@ -7,13 +7,21 @@
 <%= stylesheet_link_tag "http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" %>
 <%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' %>
 
+<img class="photo__pic" src="https://retina.news.mail.ru/pic/d8/b5/image27582615_2b6b7a5e19d6174e367a1f6c1b9f8900.jpg">
  -->
  <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js' %>
 
+
+<script type="text/javascript">
+$('.dropdown-toggle').dropdown()
+$('[data-spy="scroll"]').each(function () {
+  var $spy = $(this).scrollspy('refresh')
+})
+</script>
 <header>
+
   <div class="container">
     <div class="jumbotron subhead" id="overview">
-
       <div class="row">
         <div class="col-sm-12 text-center" id="logo">
           <h1>Суги Бан</h1>
@@ -42,7 +50,6 @@
 
 <div class="navbar-wrapper">
       <div class="container">
-
         <nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
@@ -60,7 +67,7 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Каталог <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
+
                     <li><a href="#">Another action</a></li>
                     <li><a href="#">Something else here</a></li>
                     <li role="separator" class="divider"></li>
@@ -80,17 +87,19 @@
       </div>
     </div>
 
+
+  
 <div class="container">
 
   <div class="fotorama" data-nav="thumbs"
                         data-navposition="top"
                         data-transition="crossfade">
 
-    <%=image_tag("test.jpg" ) %>
-    <%=image_tag("test2.jpg" ) %>
-    <%=image_tag("test3.jpg" ) %>
-    <%=image_tag("test4.jpg" ) %>
-    <%=image_tag("test5.jpg" ) %>
+    <%= image_tag("test.jpg" ) %>
+    <%= image_tag("test2.jpg" ) %>
+    <%= image_tag("test3.jpg" ) %>
+    <%= image_tag("test4.jpg" ) %>
+    <%= image_tag("test5.jpg" ) %>
 
   </div>
 </div>

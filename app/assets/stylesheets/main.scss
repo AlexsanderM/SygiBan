@@ -1,7 +1,5 @@
 
-#logo {
-  font-family: Time;
-}
+
 
 .jumbotron {
   border-radius: 50px;
@@ -11,6 +9,9 @@
   color: #fff;
   background: linear-gradient(0deg, #227C3E 0%,#1EA09B 100%);
   margin-bottom: 0px;
+  //background-image: url('https://cdn.lyft.net/brochure/images/whyilyft-7-nyc.05994626.jpg');
+  //background: url(../assets/images/test2.jpeg);
+  background-image: image-url("373485.jpg");
 }
 
 .container .jumbotron {
@@ -18,11 +19,13 @@
 }
 
 .navbar-brand {
-  font-size: 30px;
+  font-size: 29px;
+  padding: 13px;
 }
 
 .navbar {
   margin-bottom: 0px;
   min-height: 70px;
   font-size: 22px;
+  padding: 10px;
 }
