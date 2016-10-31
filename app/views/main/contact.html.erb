@@ -1,7 +1,22 @@
-<h1>Main#contact</h1>
-<p>Find me in app/views/main/contact.html.erb</p>
+<%= javascript_include_tag 'http://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;mode=debug&amp;load=Map,Placemark,geocode,geoObject.addon.balloon,control.ZoomControl,control.SearchControl' %>
 
 
-<h1>Tyt Contact</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 text-center" id="logo">
+      <h2>Контакты</h2>
+      <h4>Компания: 	Суги Бан <br>
+        Регион: 	Невинномысск <br>
+        Контактное лицо: 	Терещенко Игорь <br>
+        Телефон: +7-988-863-20-10 <br>
+        Телефон: +7-962-430-53-03 <br>
+        Адрес: 	Ставропольский край, г. Невинномысск, <br> ул. Водопроводная 360, офис 119 этаж 1 <br>
+        E-mail:  <br>
+        </h4>
+        <h3>Компания на карте города</h3>
+        <img src="http://static-maps.yandex.ru/1.x/?ll=97.326541,57.449456&amp;z=15&amp;size=650,400&amp;l=map&amp;pt=97.326541,57.449456,pm2blm"> <br>
 
-<%= link_to "Na MAIN", root_path %>
+      <%= link_to "Na MAIN", root_path %>
+    </div>
+  </div>
+</div>
