@@ -7,7 +7,6 @@
 
   <%= csrf_meta_tags %>
 
-
 </head>
 <body>
 
@@ -26,7 +25,7 @@
             С нами вы сделаете свое жилище оссобенным.</h3>
           </div>
         </div>
-        <div class="row">
+        <div class="row" id="numberPhone">
           <div class="col-sm-12 text-right">
             <h4>Телефон: +7-988-863-20-10</h4>
           </div>
@@ -60,16 +59,6 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Каталог <span class="caret"></span></a>
                     <ul class="dropdown-menu">
 
-                      <li class="dropdown-header">Листовые материалы</li>
-                      <li><a href="#">ДВП</a></li>
-                      <li><a href="#">ДСП</a></li>
-                      <li><a href="#">Ламинированная фанера</a></li>
-                      <li><a href="#">МДФ</a></li>
-                      <li><a href="#">Мебельный щит</a></li>
-                      <li><a href="#">ОСП плита (OSB)</a></li>
-                      <li><a href="#">Фанера</a></li>
-
-                      <li role="separator" class="divider"></li>
                       <li class="dropdown-header">Напольные покрытия</li>
                       <li><a href="#">Половая доска</a></li>
 
@@ -90,6 +79,7 @@
 
                   <li><%= link_to "Котакты", main_contact_path%></li>
                   <li><a href="#about">Фото галерея</a></li>
+                  <li><a href="#about">Отзывы</a></li>
                 </ul>
               </div>
             </div>
