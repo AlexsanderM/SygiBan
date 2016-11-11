@@ -4,4 +4,7 @@ class MainController < ApplicationController
 
   def contact
   end
+
+  def catalog
+  end
 end
